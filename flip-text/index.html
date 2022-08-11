@@ -1,0 +1,58 @@
+<!DOCTYPE HTML >
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="shortcut icon" href="favicon.png" />
+      <title>Flip Text</title>
+      <link type="text/css" rel="stylesheet" href="flip.css">
+   </head>
+   <body>
+      <div id="share">
+         <g:plusone></g:plusone>
+         <br>
+         <a href="" id="bookmark" rel="sidebar"><img src="star.png"><span>Bookmark</span></a>
+      </div>
+      <div id="main">
+      <div style="margin-left:-15px;margin-bottom:5px;">
+         <b class="rounded">
+         <b class="rounded1"><b></b></b>
+         <b class="rounded2"><b></b></b>
+         <b class="rounded3"></b>
+         <b class="rounded4"></b>
+         <b class="rounded5"></b></b>
+         <div class="roundedfg">
+            <form action="/" method="POST">
+               <label id="lOriginalText" for="originalText">Type text, words, letters, or symbols here:</label>
+               <textarea id="originalText" name="originalText"></textarea>
+               <div id="charCount">0</div>
+               <div id="options">
+                  <strong>Text Effects</strong>:
+                  <div id="optPost">
+                     <input type="submit" id="submitConvert" name="submitText" value="Flip Text">
+                     <br>Post to:<br> <img id="postFacebook" alt="Facebook" src="facebook_16.png" /> <img id="postTwitter" alt="Twitter" src="twitter_16.png" />
+                  </div>
+                  <p class="optCont"><label class="optLabels"><input type="checkbox" id="backwards" name="backwards" checked="checked" value="1">Backwards Effect (Reverses text)</label></p>
+                  <p class="optCont"><label class="optLabels"><input type="checkbox" id="upsideDown" name="upsideDown" value="1">Upside Down Effect (Flips text)</label></p>
+               </div>
+               <label for="convertedText" id="lConvertedText">Copy this text to Facebook, Twitter, YouTube, MySpace, MSN, AIM, Gmail, Word, etc:</label>
+               <textarea id="convertedText" name="convertedText" readonly="readonly"></textarea>
+               <span><input type="submit" id="viewHTML" name="submitText" value="View HTML"></span>
+               <div id="cConvertedHTML">
+                  <label for="convertedHTML" id="lConvertedHTML">Use this text for HTML (with Unicode):</label>
+                  <textarea id="convertedHTML" name="convertedHTML" readonly="readonly"></textarea>
+               </div>
+            </form>
+         </div>
+         <b class="rounded">
+         <b class="rounded5"></b>
+         <b class="rounded4"></b>
+         <b class="rounded3"></b>
+         <b class="rounded2"><b></b></b>
+         <b class="rounded1"><b></b></b>
+         </b><br>
+      </div>
+      <script type="text/javascript" src="mootools-1.2.3-core-yc.js"></script>
+      <script type="text/javascript" src="upsideDownCore.js"></script>
+      <script type="text/javascript" src="flip.js"></script>
+   </body>
+</html>
